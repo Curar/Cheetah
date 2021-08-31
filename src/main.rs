@@ -14,12 +14,12 @@ async fn main() -> Result<(), reqwest::Error> {
       fn info() {
       // Info 
       //
-      let info = r#"=====================================
-                  =    e-mail scaner by curar   =
-                  =     https://www.rust-lang.org     =
-                  =      https://github.com/curar     =
-                  =   This is my educational project  =
-                  ====================================="#;
+      let info = r#"
+           +----------------------------------------+
+           |     Cheetah e-mail scaner by curar     |
+           |        https://www.rust-lang.org       |
+           |         https://github.com/curar       |
+           +----------------------------------------+"#;
     
         println!("{}", info);
       } 
