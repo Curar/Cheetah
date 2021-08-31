@@ -21,7 +21,7 @@ async fn main() -> Result<(), reqwest::Error> {
                   =   This is my educational project  =
                   ====================================="#;
     
-        println!("{}", info;
+        println!("{}", info);
       } 
 
      //Adding data
