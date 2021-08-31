@@ -4,6 +4,7 @@
 // Posted by Curar in 2021 for fun
 
 use std::io;
+use std::io::Write;
 use regex::Regex;
 use reqwest;
 #[tokio::main]
@@ -32,8 +33,13 @@ async fn main() -> Result<(), reqwest::Error> {
      
      // Check the server, enter the address
      //
-     println!("Enter a website address to check email addresses http://127.0.0.1 :");
+     print!("Enter a website address to check email addresses http://127.0.0.1 :");
      
+     match io::stdout().flush() {
+        Ok(_) => print!("") ,
+        Err(e) => println!("{}", e),
+     }
+
      io::stdin().read_line(&mut serwer)
         .ok()
         .expect("Failed to read line");
