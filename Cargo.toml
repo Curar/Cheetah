@@ -1,0 +1,17 @@
+[package]
+name = "cheetah"
+version = "0.1.0"
+edition = "2018"
+authors = ["Curar 2021r."]
+license = "GPL-v3"
+repository = "https://github.com/curar"
+
+[dependencies]
+regex = "*"
+reqwest = "*"
+tokio = {version = "*", features = ["full"]}
+[profile.dev]
+opt-level = 3
+[profile.release]
+lto = true
+opt-level = 3
