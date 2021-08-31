@@ -22,7 +22,7 @@ async fn main() -> Result<(), reqwest::Error> {
            |         https://github.com/curar       |
            +----------------------------------------+"#;
     
-        println!("{}", info);
+        println!("{}\n", info);
       } 
 
      //Adding data
